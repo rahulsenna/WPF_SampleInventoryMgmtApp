@@ -1,4 +1,6 @@
-﻿namespace InventoryApp.View
+﻿using System.Windows;
+
+namespace InventoryApp.View
 {
     public partial class MainWindow : Window
     {
