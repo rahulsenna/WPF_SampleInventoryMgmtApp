@@ -9,9 +9,9 @@
 				d:DataContext="{d:DesignInstance Type=viewmodel:MainWindowViewModel}"
 				mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-	<Window.DataContext>
+	<!--<Window.DataContext>
 		<viewmodel:MainWindowViewModel/>
-	</Window.DataContext>
+	</Window.DataContext>-->
 	<Grid ColumnDefinitions="3*, 7*">
 		<!--<Rectangle Grid.Column="0" Fill="Red" />-->
 		<StackPanel Grid.Column="0" Margin="5,55,5,200" >
