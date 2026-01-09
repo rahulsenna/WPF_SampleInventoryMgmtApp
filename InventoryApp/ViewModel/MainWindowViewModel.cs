@@ -47,7 +47,7 @@ namespace InventoryApp.ViewModel
 			if (e.Item is Product product)
 			{
 				bool matchesSearch = string.IsNullOrWhiteSpace(SearchText) || product.Name.Contains(SearchText, StringComparison.OrdinalIgnoreCase);
-				bool matchesCategory = SelectedCategory == null || SelectedCategory.Id == 0 || product.CategoryId == SelectedCategory.Id;
+				bool matchesCategory = SelectedCategory == null || SelectedCategory.Id == 0 || product.Category?.Id == SelectedCategory.Id;
 				e.Accepted = matchesSearch && matchesCategory;
 			}
 		}
