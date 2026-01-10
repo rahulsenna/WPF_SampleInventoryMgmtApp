@@ -30,7 +30,6 @@
 			IsDefault="True"
 			IsCancel="True" 
 			Click="SaveButton_Click"
-			Command="{Binding SaveCommand}"
 			/>
 			<Button Margin="5,0,5,0" 
 			Padding="5,0,5,0" 

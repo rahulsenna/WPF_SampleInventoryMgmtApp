@@ -41,7 +41,7 @@
 				<Button Margin="5,0,5,0" Padding="5,0,5,0" Content="Add Product" Command="{Binding AddCommand}" />
 				<Button Margin="5,0,5,0" Padding="5,0,5,0" Content="Edit Selected" Command="{Binding EditCommand}" />
 				<Button Margin="5,0,5,0" Padding="5,0,5,0" Content="Delete Selected" Command="{Binding DeleteCommand}" />
-				<Button Margin="5,0,5,0" Padding="5,0,5,0"  Content="Refresh" />
+				<Button Margin="5,0,5,0" Padding="5,0,5,0"  Content="Refresh"  Command="{Binding RefreshCommand}" />
 			</StackPanel>
 			<DataGrid Grid.Row="1" 
           ItemsSource="{Binding ProductsView}"

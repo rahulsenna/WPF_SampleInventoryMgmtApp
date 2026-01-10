@@ -12,7 +12,7 @@ namespace InventoryApp.View
 
 		private void SaveButton_Click(object sender, RoutedEventArgs e)
 		{
-			//DialogResult = true;
+			DialogResult = true;
 			Close();
 		}
 	}
