@@ -51,7 +51,6 @@
           SelectionMode="Single"
           CanUserAddRows="False"
           CanUserDeleteRows="False"
-          AlternatingRowBackground="#F9F9F9"
           GridLinesVisibility="Horizontal"
           HeadersVisibility="Column"
           Margin="10">

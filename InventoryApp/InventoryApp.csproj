@@ -12,7 +12,6 @@
     <Folder Include="MVVM\" />
     <Folder Include="Services\" />
     <Folder Include="ViewModel\" />
-    <Folder Include="Data\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -111,8 +111,11 @@ namespace InventoryApp.ViewModel
 			ProductModal modal = new() { Title = "Add", DataContext = pvm };
 			if (modal.ShowDialog() == true && pvm.product != null)
 			{
-				Products.Add(pvm.product);
-				await _productService.AddProductAsync(pvm.product);
+				var res = await _productService.AddProductAsync(pvm.product);
+				if (!res.IsSuccess)
+				{
+					MessageBox.Show($"Error adding product: {res.Error}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+				}
 				await LoadDataAsync();
 			}
 		}

@@ -30,10 +30,10 @@ namespace InventoryApp.Data
         // Seed Products
         var products = new List<Product>
         {
-          new Product { Name = "Laptop", Price = 999.99m, CategoryId = categories[0].Id },
-          new Product { Name = "Smartphone", Price = 499.99m, CategoryId = categories[0].Id },
-          new Product { Name = "Novel", Price = 19.99m, CategoryId = categories[1].Id },
-          new Product { Name = "T-Shirt", Price = 9.99m, CategoryId = categories[2].Id },
+          new Product { Name = "Laptop", Price = 999.99m, Quantity = 50, CategoryId = categories[0].Id },
+          new Product { Name = "Smartphone", Price = 499.99m, Quantity = 5, CategoryId = categories[0].Id },
+          new Product { Name = "Novel", Price = 19.99m, Quantity = 40, CategoryId = categories[1].Id },
+          new Product { Name = "T-Shirt", Price = 9.99m, Quantity = 2, CategoryId = categories[2].Id },
 					new Product { Name = "Macbook", Price = 1699.99m, Quantity = 15, Category = categories[1], CreatedAt = DateTime.Now.AddDays(-30) },
 				  new Product { Name = "Wireless Mouse", Price = 29.99m, Quantity = 50, Category = categories[1], CreatedAt = DateTime.Now.AddDays(-25) },
 				  new Product { Name = "Mechanical Keyboard", Price = 89.99m, Quantity = 30, Category = categories[1], CreatedAt = DateTime.Now.AddDays(-20) },
