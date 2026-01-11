@@ -5,20 +5,19 @@
 						 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 						 mc:Ignorable="d" 
              d:DesignHeight="40" d:DesignWidth="250">
-	<Grid Background="White">
+	<Grid>
 		<TextBlock 
 			x:Name="txtPlaceholder" 
 			VerticalAlignment="Center" 
 			Text="{Binding Placeholder}"
 			Margin="5,0,0,0"
 			Panel.ZIndex="0"
-			FontSize="16" 
 			FontWeight="Light"
 			Foreground="DarkGray"
 />
 		<TextBox x:Name="txtInput" 
 		VerticalContentAlignment="Center"
-		FontSize="16" FontWeight="Light"
+		FontWeight="Light"
 		Background="Transparent"
 		TextChanged="txtInput_TextChanged"
 		/>

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DarkNet" Version="2.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.1" />
   </ItemGroup>

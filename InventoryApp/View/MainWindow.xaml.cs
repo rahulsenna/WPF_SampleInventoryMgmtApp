@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Dark.Net;
 
 namespace InventoryApp.View
 {
@@ -8,6 +9,8 @@ namespace InventoryApp.View
 		{
 			var dictionaries = Application.Current.Resources.MergedDictionaries;
 			dictionaries.Clear();
+
+			DarkNet.Instance.SetWindowThemeWpf(this, enabled ? Theme.Dark : Theme.Light);
 
 			if (enabled)
 			{
@@ -24,11 +27,19 @@ namespace InventoryApp.View
 				});
 			}
 		}
+		bool isDarkMode;
 
 		public MainWindow()
 		{
+			DarkNet.Instance.SetWindowThemeWpf(this, Theme.Dark);
 			InitializeComponent();
 			SetDarkMode(false);
+		}
+
+		private void ToggleDarkMode_Click(object sender, RoutedEventArgs e)
+		{
+			isDarkMode = !isDarkMode;
+			SetDarkMode(isDarkMode);
 		}
 	}
 }
