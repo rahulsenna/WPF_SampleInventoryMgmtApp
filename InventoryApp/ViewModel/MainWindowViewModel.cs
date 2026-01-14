@@ -108,7 +108,8 @@ namespace InventoryApp.ViewModel
 		private async Task AddActionAsync()
 		{
 			ProductViewModel pvm = new(Categories);
-			ProductModal modal = new() { Title = "Add", DataContext = pvm };
+			ProductModal modal = new() { Title = "Add", DataContext = pvm, Owner = Application.Current.MainWindow };
+			
 			if (modal.ShowDialog() == true && pvm.product != null)
 			{
 				var res = await _productService.AddProductAsync(pvm.product);

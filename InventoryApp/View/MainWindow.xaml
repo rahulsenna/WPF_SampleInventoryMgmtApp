@@ -7,6 +7,7 @@
 				xmlns:UserControls="clr-namespace:InventoryApp.View.UserControls"
 				d:DataContext="{d:DesignInstance Type=viewmodel:MainWindowViewModel}"
 				mc:Ignorable="d"
+				WindowStartupLocation="Manual"
 				Title="MainWindow" Height="450" Width="800">
 	
 	<Grid ColumnDefinitions="3*, 7*">
